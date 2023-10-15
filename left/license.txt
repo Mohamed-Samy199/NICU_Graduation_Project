@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sci fi incubator
+* source:	https://sketchfab.com/3d-models/sci-fi-incubator-63f6bee67df14292b8c9a952b568cc96
+* author:	A9908244 (https://sketchfab.com/A9908244)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sci fi incubator" (https://sketchfab.com/3d-models/sci-fi-incubator-63f6bee67df14292b8c9a952b568cc96) by A9908244 (https://sketchfab.com/A9908244) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

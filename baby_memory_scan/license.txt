@@ -1,0 +1,11 @@
+Model Information:
+* title:	Baby Memory Scan
+* source:	https://sketchfab.com/3d-models/baby-memory-scan-e68d987aad524a39bdd409034f333020
+* author:	belltyler (https://sketchfab.com/belltyler)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Baby Memory Scan" (https://sketchfab.com/3d-models/baby-memory-scan-e68d987aad524a39bdd409034f333020) by belltyler (https://sketchfab.com/belltyler) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,61 @@
+@import "../../index.scss";
+
+.contact-place {
+    border: 10px solid #8c89a0;
+}
+
+.form-contact-data {
+    input {
+        &:focus {
+            border: 2px solid rgba(0, 206, 158, 1) !important;
+            box-shadow: none !important;
+        }
+    }
+
+    textarea {
+        &:focus {
+            border: 2px solid rgba(0, 206, 158, 1) !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.contact-details {
+    background-color: $secondBg;
+}
+
+.address-contact {
+    i {
+        transform: translateY(-10px);
+    }
+}
+
+.icon-contact {
+    cursor: pointer;
+
+    &:hover {
+        i {
+            color: $tealColor;
+        }
+
+        h4 {
+            color: $tealColor;
+        }
+    }
+}
+
+@media (max-width : 995px) {
+    .show-head {
+        .contact {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width : 995px) {
+    .show-head {
+        .contact {
+            font-size: 25px;
+        }
+    }
+}

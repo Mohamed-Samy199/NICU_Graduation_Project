@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.doctor-details {
+    .details {
+        h5 {
+            &:hover {
+                transform: translateX(10px);
+                color: $tealColor;
+                cursor: pointer;
+            }
+        }
+    }
+}

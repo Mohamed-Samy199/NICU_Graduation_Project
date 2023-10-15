@@ -1,0 +1,241 @@
+@import '../../index.scss';
+
+.home {
+    width: 100%;
+    height: 100vh;
+}
+
+// .overlay-back{
+//     height: 100vh;
+//     background-color: rgba(0, 0, 0, .8);
+//     width: 100% !important;
+// }
+.carousel {
+    height: 100vh;
+    width: 100% !important;
+}
+
+.overlay-background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.carousel-caption {
+    z-index: 5;
+    transform: translateY(35%);
+}
+
+.carousel-one {
+    background: url(../Assets/three-nicu.jpg) no-repeat !important;
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+}
+
+.carousel-two {
+    background: url(../Assets/two-nicu.jpg) no-repeat !important;
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+}
+
+.carousel-three {
+    background: url(../Assets/one-nicu.jpg) no-repeat !important;
+    height: 100vh;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100% !important;
+}
+
+.particles {
+    z-index: 100;
+}
+
+.part {
+    height: 100vh !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    background: url("../Assets/icon.png") no-repeat center !important;
+    background-size: cover !important;
+    width: 30px !important;
+    margin-right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none !important;
+}
+
+.carousel-caption {
+    bottom: 50% !important;
+}
+
+.carousel-indicators {
+    bottom: 20% !important;
+}
+
+.bar {
+    width: 60%;
+    margin: 20px auto;
+    background-color: $lightColor;
+    color: $dark;
+    position: absolute;
+    z-index: 20;
+    transform: translate(35%, -9rem);
+    overflow: hidden;
+
+    .marquee h3 {
+        position: relative;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .marquee h3::after {
+        content: '';
+        position: absolute;
+        right: 2px;
+        top: 5px;
+        height: 40px;
+        width: 3px;
+        background-color: $dark;
+    }
+}
+
+.section-two {
+    width: 75%;
+    margin: 10px auto;
+
+    .text-muted {
+        width: 75%;
+        margin: 20px auto;
+    }
+}
+
+.home-container {
+    border-radius: 150px 0 0 0;
+    background-color: $secondBg;
+}
+
+.nicu-area {
+    background: url(../Assets/shape-bg-01.png) center no-repeat;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+}
+
+.appointment {
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    background-color: transparent;
+    width: 14rem;
+}
+
+.appointment:hover {
+    background-color: rgba(0, 0, 0, .3);
+    color: $tealColor;
+    border: 3px solid $tealColor;
+}
+
+.show-head {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.show-head video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.show-head .titel {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: $dark;
+    font-size: 100px;
+    mix-blend-mode: multiply;
+    text-align: center;
+}
+
+// .rotate-image .position-absolute{
+//     width: 350px;
+//     height: 600px;
+// }
+// .rotate-image .position-absolute img{
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+
+
+.bubble4 {
+    animation: bubble4 3.5s linear 0s infinite alternate;
+    width: 100%;
+}
+
+.bubble44 {
+    animation: bubble44 3s ease-in 0s infinite alternate;
+}
+
+@keyframes bubble4 {
+    from {
+        transform: translateX(0px);
+        opacity: 1;
+        width: 100%;
+    }
+
+    to {
+        transform: translateX(calc(91vw - 10vmin));
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+@keyframes bubble44 {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+        width: 100%;
+    }
+
+    to {
+        transform: translateY(calc(30vw - 10vmin));
+        opacity: 0;
+        width: 0%;
+    }
+}
+
+
+@media (max-width: 472px) {
+    .nicu-area {
+        height: 100%;
+    }
+
+    .show-head .titel {
+        font-size: 35px;
+    }
+
+    .carousel-caption {
+        transform: translateY(130px);
+    }
+}
+
+@media (min-width: 472px) {
+    .nicu-area {
+        height: 100%;
+    }
+
+}

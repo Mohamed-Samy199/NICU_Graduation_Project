@@ -1,0 +1,14 @@
+.swiper-pagination-fraction {
+    display: none;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    img{
+        border-radius: 25px;
+        object-fit: cover;
+    }
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    display: none;
+}

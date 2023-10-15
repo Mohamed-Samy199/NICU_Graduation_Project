@@ -1,0 +1,18 @@
+@import '../../index.scss';
+
+.register 
+{
+    // background-color: $secondBg;
+    input{
+        border: 1px solid $secondBg;
+    }
+    .image-auth img{padding: 15px;width: 100%;animation: float 5s linear infinite;}
+    @keyframes float{
+        0%, 100%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(25px);
+        }
+    }
+}

@@ -1,0 +1,243 @@
+@import '../../index.scss';
+
+.shop {
+    background: url(../Assets/back_bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+
+    .containet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .content-left .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
+            transform: translateX(35%);
+
+            .content-left .content h2 {
+                color: #fff;
+                margin: 30px 0;
+                font-size: 38px;
+                padding: 20px 0;
+            }
+
+            .content-left .content .button {
+                margin: 30px 0 30px 40px;
+            }
+        }
+    }
+}
+
+.shop .containet .content-left .image {
+    bottom: -33rem;
+    position: absolute;
+    animation: tolaft 2s .2s linear;
+    left: 0;
+}
+
+@keyframes tolaft {
+    0% {
+        transform: translateX(-20rem);
+    }
+
+    50% {
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+.shop .containet .content-right .image {
+    position: absolute;
+    animation: toright 2s .2s linear;
+    right: -72rem;
+    bottom: -33rem;
+}
+
+@keyframes toright {
+    0% {
+        transform: translateX(20rem);
+    }
+
+    50% {
+        transform: translateX(10rem);
+    }
+
+    100% {
+        transform: translateX(0rem);
+    }
+}
+
+.ball1 {
+    position: absolute;
+    background: $tealColor;
+    width: 20vh;
+    height: 20vh;
+    opacity: .7;
+    border-radius: 50%;
+
+}
+
+.bubble1 {
+    animation: bubble1 4.5s linear 0s infinite alternate;
+}
+
+.bubble11 {
+    animation: bubble11 2s ease-in 0s infinite alternate;
+}
+
+@keyframes bubble1 {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(calc(95vw - 10vmin));
+    }
+}
+
+@keyframes bubble11 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(calc(36vw - 10vmin));
+    }
+}
+
+.ball2 {
+    position: absolute;
+    background: $lightColor;
+    width: 30vh;
+    height: 30vh;
+    opacity: .7;
+    border-radius: 50%;
+}
+
+.bubble2 {
+    animation: bubble2 3.5s linear 0s infinite alternate;
+    width: 100%;
+}
+
+.bubble22 {
+    animation: bubble22 3s ease-in 0s infinite alternate;
+}
+
+@keyframes bubble2 {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(calc(91vw - 10vmin));
+    }
+}
+
+@keyframes bubble22 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(calc(30vw - 10vmin));
+    }
+}
+
+.ball3 {
+    position: absolute;
+    background: $secondBg;
+    width: 40vh;
+    height: 40vh;
+    opacity: .7;
+    border-radius: 50%;
+}
+
+.bubble3 {
+    animation: bubble3 5.5s linear 0s infinite alternate;
+    width: 100%;
+}
+
+.bubble33 {
+    animation: bubble33 2.5s ease-in 0s infinite alternate;
+}
+
+@keyframes bubble3 {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(calc(86vw - 10vmin));
+    }
+}
+
+@keyframes bubble33 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(calc(25vw - 10vmin));
+    }
+}
+
+@media (max-width: 1088px) {
+    .shop .containet .content-right .image {
+        right: -43rem;
+    }
+}
+
+@media (max-width: 1088px) {
+    .shop .containet .content-left .image {
+        width: 310px;
+        bottom: -35rem;
+
+    }
+
+    .shop .containet .content-right .image {
+        left: 48rem;
+        width: 310px;
+        bottom: -35rem;
+    }
+
+    .shop .containet .content-left .image img,
+    .shop .containet .content-right .image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 935px) {
+    .shop .containet .content-right .image {
+        left: 40rem;
+    }
+}
+
+@media (max-width: 595px) {
+    .shop .containet .content-right .image {
+        left: 18rem;
+    }
+}
+
+@media (max-width: 395px) {
+    .shop .containet .content-left .image {
+        width: 205px;
+        bottom: -37rem;
+    }
+
+    .shop .containet .content-right .image {
+        left: 12rem;
+        width: 205px;
+        bottom: -37rem;
+    }
+
+}

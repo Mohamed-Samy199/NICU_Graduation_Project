@@ -1,0 +1,93 @@
+@import '../../index.scss';
+
+.accordion-button:not(.collapsed) {
+    background-color: $tealColor !important;
+    color: $lightColor !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important
+}
+
+.img-accordion {
+    background: url('https://labartisan.net/demo/mukti/assets/images/footer/bg1.png') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about-two {
+    .banner {
+        .position-absolute {
+            transform: translateX(65%);
+        }
+    }
+
+    .parent {
+        .ba-image {
+            background: url('../Assets/about-2.jpg') center no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .part-two {
+            background-color: $secondBg;
+            padding: 80px;
+
+            .d-flex {
+                h5 {
+                    &:hover {
+                        color: $tealColor;
+                        cursor: pointer;
+                        transform: translateX(10px);
+                    }
+                }
+
+            }
+
+            .vedio {
+                background-color: $secondBg;
+                position: absolute;
+                transform: translate(-100%, 120%);
+                display: inline-block;
+            }
+        }
+    }
+
+    .banner-3 {
+
+        h3,
+        h4 {
+            color: $dark;
+        }
+
+        .rounded-circle {
+            border: .8px solid #777;
+            width: 180px;
+            height: 180px;
+        }
+
+        h2 {
+            color: $lightColor;
+            background-color: $tealColor;
+            border-radius: 50%;
+            transform: translate(110%, -130%);
+        }
+    }
+}
+
+@media (max-width : 878px) {
+    .parent {
+        .part-two {
+            .d-flex {
+                h5 {
+                    font-size: 15px;
+                }
+            }
+
+            h2 {
+                font-size: 22px !important;
+            }
+        }
+
+    }
+}

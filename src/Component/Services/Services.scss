@@ -1,0 +1,116 @@
+@import '../../index.scss';
+
+.services{
+        .item{
+            background: $lightColor;
+                .details{
+                    a & :hover{
+                            color: $tealColor !important;
+                    }
+                
+            }
+        
+    }
+}
+.pop{
+    color: green !important;
+}
+.specialies{
+    .select-images{
+        img{
+            background: $lightColor;
+            padding: 10px ;
+            border: .5px solid $secondBg;
+        }
+    }
+    .images {
+        object-fit: cover;
+        img {
+            cursor: pointer;
+            object-fit: cover;
+        }
+    }
+}
+.banner-4{
+    background-color: $secondBg;
+}
+.gallery {
+    .sliderWrap{
+        background-color: rgba(0 , 0, 0 , .5) !important;
+        .fullScreenImage{
+            transform: translateY(70%);
+        }
+    }
+}
+.center-place{
+    .row{
+        height: 80vh;
+        .bg-image{
+            transform: translate(10% , 20%);
+            img{
+                animation: float 5s linear infinite;
+            }
+        }
+    }
+}
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(25px);
+    }
+}
+.helps{
+        .item{
+            background-color: $secondBg;
+            .image-help{
+                img{
+                    background-color: $tealColor;
+                }
+            }
+        }
+
+    .accordion-item , .accordion-item .accordion-button{
+        background-color: transparent;
+        color: $lightColor;
+    }
+    .center{
+        p span{
+            color: $lightColor;
+        }
+    }
+}
+.accordion-button:not(.collapsed) {
+    background-color: $tealColor !important;
+    color: $lightColor !important;
+}
+.accordion-button:focus {
+    box-shadow : none !important
+}
+.img-accordion {
+    background: url('https://labartisan.net/demo/mukti/assets/images/footer/bg1.png') center no-repeat ;
+            background-size: cover;
+            height: 100vh;
+}
+@media (max-width: 806px) {
+
+    .points h5{
+        font-size: 16px;
+    }
+    .gallery  .header h2{
+        font-size: 20px;
+    }
+    .center-place .row .bg-image {
+        transform: translate(-14%, 50%);
+    }
+}
+@media (max-width: 395px) {
+    .center-place .row .bg-image {
+        transform: translate(30%, -20%);
+        width: 230px;
+    }
+    .helps{
+        margin-top: 105px;
+    }
+}

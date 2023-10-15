@@ -1,0 +1,125 @@
+@import '../../index.scss';
+
+.bubble {
+    background: url(../Assets/project-left.png) no-repeat center;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+}
+
+.ball-one {
+    position: absolute;
+    background: $tealColor;
+    width: 10vh;
+    height: 10vh;
+    opacity: .7;
+    border-radius: 50%;
+}
+
+.bubble-one {
+    animation: bubble-one 4.5s linear 0s infinite alternate;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.bubble-one-one {
+    animation: bubble-one-one 2s ease-in 0s infinite alternate;
+}
+
+@keyframes bubble-one {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(95%);
+    }
+}
+
+@keyframes bubble-one-one {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(20vh);
+    }
+}
+
+.ball-two {
+    position: absolute;
+    background: $lightColor;
+    width: 15vh;
+    height: 15vh;
+    opacity: .7;
+    border-radius: 50%;
+}
+
+.bubble-two {
+    animation: bubble-two 3.5s linear 0s infinite alternate;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.bubble-two-two {
+    animation: bubble-two-two 3s ease-in 0s infinite alternate;
+}
+
+@keyframes bubble-two {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(95%);
+    }
+}
+
+@keyframes bubble-two-two {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(15vh);
+    }
+}
+
+.ball-three {
+    position: absolute;
+    background: $secondBg;
+    width: 20vh;
+    height: 20vh;
+    opacity: .7;
+    border-radius: 50%;
+}
+
+.bubble-three {
+    animation: bubble-three 5.5s linear 0s infinite alternate;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.bubble-three-three {
+    animation: bubble-three-three 2.5s ease-in 0s infinite alternate;
+}
+
+@keyframes bubble-three {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(95%);
+    }
+}
+
+@keyframes bubble-three-three {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(10vh);
+    }
+}
