@@ -3,7 +3,7 @@ import './AcoordionUs.modules.scss'
 import { cardUs } from '../../data'
 
 const AccordionUs = () => {
-    const [active, setActive] = useState(0)
+    const [active, setActive] = useState(0);
     return (
         <div className='accordions'>
             {

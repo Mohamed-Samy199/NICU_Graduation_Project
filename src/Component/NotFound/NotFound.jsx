@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 const NotFound = () => {
     let navigate = useNavigate()
     const goToHome = () =>{
-        navigate('/home')
+        navigate('/home');
     }
     return (
         <div className='container'>

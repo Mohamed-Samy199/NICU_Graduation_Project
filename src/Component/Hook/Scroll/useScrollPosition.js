@@ -12,4 +12,4 @@ const useScrollPosition = () => {
     return scrollPosition
 }
 
-export default useScrollPosition
+export default useScrollPosition;
